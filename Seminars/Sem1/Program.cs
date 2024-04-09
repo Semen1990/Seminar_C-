@@ -3,15 +3,25 @@
 // int a = Convert.ToInt32(Console.ReadLine());
 // System.Console.WriteLine($"Квадрат вашего числа {a} =  {a*a}");
 
-Console.WriteLine("Введите первое число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-int b = Convert.ToInt32(Console.ReadLine());
-if (a == b*b)
+// Console.WriteLine("Введите первое число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// if (a == b*b)
+// {
+// System.Console.Write($"Введеное число {a} является квадратом числа {b}");
+// }
+// else
+// {
+//    System.Console.Write($"Введеное число {a} не является квадратом числа {b}"); 
+// }
+
+Console.WriteLine("Введите число N ");
+int n = Convert.ToInt32(Console.ReadLine());
+int st= -n;
+
+while (st <= n)
 {
-System.Console.Write($"Введеное число {a} является квадратом числа {b}");
-}
-else
-{
-   System.Console.Write($"Введеное число {a} не является квадратом числа {b}"); 
+   Console.Write(st + " ");
+   st++;
 }
