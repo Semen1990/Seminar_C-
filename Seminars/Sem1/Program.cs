@@ -9,9 +9,9 @@ Console.WriteLine("Введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
 if (a == b*b)
 {
-System.Console.WriteLine($"Введеное число {a} является квадратом числа {b}");
+System.Console.Write($"Введеное число {a} является квадратом числа {b}");
 }
 else
 {
-   System.Console.WriteLine($"Введеное число {a} не является квадратом числа {b}"); 
+   System.Console.Write($"Введеное число {a} не является квадратом числа {b}"); 
 }
