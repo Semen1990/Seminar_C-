@@ -16,12 +16,26 @@
 //    System.Console.Write($"Введеное число {a} не является квадратом числа {b}"); 
 // }
 
-Console.WriteLine("Введите число N ");
-int n = Convert.ToInt32(Console.ReadLine());
-int st= -n;
+// Console.WriteLine("Введите число N ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int st= -n;
 
-while (st <= n)
+// while (st <= n)
+// {
+//    Console.Write(st + " ");
+//    st++;
+// }
+
+
+Console.WriteLine("Введите трехзначное число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n >= 100 && n <= 1000)
 {
-   Console.Write(st + " ");
-   st++;
+   int fn = n % 10;
+   int ln = n/100;
+   Console.Write($"Сумма первго числа {fn} и последнего числа {ln} трехзначного числа =  {fn + ln}");
+}
+else
+{
+   Console.Write("Вы ввели не трехзначное число");
 }
