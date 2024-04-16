@@ -27,16 +27,30 @@
 // }
 
 
-Console.WriteLine("Введите трехзначное число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-if (n >= 100 && n <= 1000)
-{
-   int fn = n % 10;
-   int ln = n/100;
-   Console.Write($"Сумма первго числа {fn} и последнего числа {ln} трехзначного числа =  {fn + ln}");
-}
-else
-{
-   Console.Write("Вы ввели не трехзначное число");
-}
+// Console.WriteLine("Введите трехзначное число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// if (n >= 100 && n <= 1000)
+// {
+//    int fn = n % 10;
+//    int ln = n/100;
+//    Console.Write($"Сумма первго числа {fn} и последнего числа {ln} трехзначного числа =  {fn + ln}");
+// }
+// else
+// {
+//    Console.Write("Вы ввели не трехзначное число");
+// }
 
+// int a = 5;
+// void NumToQuad(int num)
+// {
+//    System.Console.WriteLine(num * num);
+// }
+// NumToQuad(a);
+
+int NumToQuadInt(int num)
+{
+   return num*num;
+}
+System.Console.WriteLine("Введите число ");
+int a = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine(NumToQuadInt(a));
